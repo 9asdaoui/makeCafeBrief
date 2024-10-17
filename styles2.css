@@ -23,8 +23,9 @@ body {
 }
 
 .navbar ul {
+    
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
 } 
 
@@ -34,6 +35,7 @@ body {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    
 }
 
 .navbar button{
@@ -46,12 +48,17 @@ body {
     color: white;
     border: none;
     transition: all 0.5s;
-    cursor: pointer;
+    cursor: pointer;    
+    transition: transform 0.3s ease;
+}
+.navbar button:hover { 
+    background-color: #B17457;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
 }
 
-.navbar button:hover{
-    background-color: #B17457;
-}
+
 .main{
     margin-top: 100px;
     margin-bottom: 70px;
@@ -66,29 +73,55 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.h3{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(90deg, #5A3B1E, #895D2B, #8c6c4d);
+    font-size: 100pt;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;   
+}
 .main1 {
-
+    
     display: flex;
     justify-content: space-around;
     margin-bottom: 70px;
 }
-.main1 button{
-    background-color: #482E1D;
+.main1 .gal button{
+    background-image: url(images/gal.jpg) ;
+
+}
+.main1 .bok button{
+    background-image: url(images/tablee.jpg);
+}
+.main1 .con button{
+    background-image: url(images/contactt.jpg);
+}
+.main1 button {
     width: 400px;
     height: 300px;
     border-radius: 7px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25pt;
-    color: white;
+    color: black;
     border: none;
-    transition: all 0.5s;
     box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgb(0, 0, 0);
+    transition: transform 0.3s ease;
 }
-.main1 button:hover{
-    background-color: #B17457;
-}
+.main1 button:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+  }
+
+
 footer{
+    
     background-color: #15151efb;
     height: 200px;
     text-align: center;
@@ -113,6 +146,7 @@ footer a button{
 }
 footer button:hover{
     background-color: #B17457;
+    
 }
 footer a button img{
     height: 18px;
@@ -127,6 +161,14 @@ footer a button img{
     width: 300px;
     height: 300px;
     border-radius: 20px;
+    transition: 0.3s ease;
+
+}
+.gallery2 img:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.05);
+  
 }
 
 .gallery2 button{
@@ -139,8 +181,55 @@ footer a button img{
     color: white;
     border: none;
     transition: all 0.5s;
+    width: 300px;
 
 }
 .gallery2 button:hover{
     background-color: #B17457;
+}
+.forms{
+    text-align: center;
+    border-radius: 90px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 200px;
+    padding: 90px;
+    background-color: #0e0e1489;
+
+}
+
+form input{
+    padding: 10px;
+    margin:8px;
+    width: 30%;
+    height: 70px;
+    background-color: #0e0e14;
+    border: none;
+    border-radius: 10px;
+
+}
+form textarea {
+    padding: 10px;
+    margin:8px;
+    background-color: #0e0e14;
+    border: none;
+    border-radius: 10px;
+    width: 63%; 
+    height: 80px;
+}
+.forms button{
+     
+    background-color: #0e0e14;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 13pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+    width: 300px;
+}
+.forms button:hover{
+    transform: scale(1.1);
 }
