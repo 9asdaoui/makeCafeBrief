@@ -1,6 +1,6 @@
+@media screen and (max-width: 600px) {
 
-@media screen and (min-width: 1024px) {
-    * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
 body {
     background-image: url("images/bc.jpg");
     background-size: auto;
+    height: 100%;
 
 }
 
@@ -16,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
@@ -27,11 +28,12 @@ body {
 .navbar ul {
     
     display: flex;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 } 
 
 .navbar ul li a {
+    font-size: 80%;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -41,10 +43,11 @@ body {
 }
 
 .navbar button{
+    width: 70%;
     background-color: #482E1D;
     padding: 15px 20px;
     border-radius: 5px;
-    font-size: 13pt;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
@@ -69,20 +72,27 @@ body {
 }
 
 .main h1 {
+    margin-left: 20px;
+    padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(90deg, #5A3B1E, #895D2B, #8c6c4d);
-    font-size: 100pt;
+    font-size: 50pt;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.main img{
+    width: 40%;
+    height: 40%;
 }
 .h3{
   padding-top: 10%;
   padding-bottom: 10%;
 }
 h3{
+    margin: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: linear-gradient(90deg, #5A3B1E, #895D2B, #8c6c4d);
-    font-size: 100pt;
+    font-size: 50pt;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;   
@@ -104,12 +114,12 @@ h3{
     background-image: url(images/contactt.jpg);
 }
 .main1 button {
-    width: 400px;
-    height: 300px;
+    width: 150px;
+    height: 130px;
     border-radius: 7px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 25pt;
+    font-size: 10pt;
     color: black;
     border: none;
     box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 rgb(0, 0, 0);
@@ -123,22 +133,22 @@ h3{
 
 
 footer{
-    
+    padding-bottom: 10%;
     background-color: #15151efb;
-    height: 200px;
+    height: 10%;
     text-align: center;
 
 }
 
 footer h5{
-    font-size: 30pt;
+    font-size: 15pt;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     color: #b99272;
-    padding: 30px;
+    padding: 15px;
 }
 footer a button{
-    width: 200px;
+    width: 110px;
     background-color: #0e0e14;
     padding: 10px;
     border-radius: 7px;
@@ -160,8 +170,8 @@ footer a button img{
     padding: 10px;
 }
 .gallery2 img{
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
     transition: 0.3s ease;
 
@@ -175,7 +185,7 @@ footer a button img{
 
 .gallery2 button{
     background-color: #482E1D;
-    padding: 40px;
+    padding: 20px;
     border-radius: 5px;
     font-size: 13pt;
     text-transform: uppercase;
@@ -183,7 +193,7 @@ footer a button img{
     color: white;
     border: none;
     transition: all 0.5s;
-    width: 300px;
+    width: 200px;
 
 }
 .gallery2 button:hover{
@@ -192,18 +202,18 @@ footer a button img{
 .forms{
     text-align: center;
     border-radius: 90px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 200px;
-    padding: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    padding: 25px;
     background-color: #0e0e1489;
 
 }
 
 form input{
-    padding: 10px;
+    padding: 15px;
     margin:8px;
-    width: 30%;
+    width: 40%;
     height: 70px;
     background-color: #0e0e14;
     border: none;
@@ -216,7 +226,7 @@ form textarea {
     background-color: #0e0e14;
     border: none;
     border-radius: 10px;
-    width: 63%; 
+    width: 85%; 
     height: 80px;
 }
 .forms button{
@@ -230,9 +240,10 @@ form textarea {
     color: white;
     border: none;
     transition: transform 0.3s ease;
-    width: 300px;
+    width: 150px;
 }
 .forms button:hover{
-    transform: scale(1.1);
+    transform: scale(1.1)
+
 }
 }
